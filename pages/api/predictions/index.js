@@ -8,10 +8,18 @@ export default async function handler(req, res) {
     body: JSON.stringify({
       // Pinned to a specific version of Stable Diffusion
       // See https://replicate.com/stability-ai/sdxl
-      version: "2b017d9b67edd2ee1401238df49d75da53c523f36e363881e057f5dc3ed3c5b2",
+      version: "6443cc831f51eb01333f50b757157411d7cadb6215144cc721e3688b70004ad0",
 
       // This is the text prompt that will be submitted by a form on the frontend
-      input: { prompt: req.body.prompt },
+      input: { 
+        "steps": 20,
+        "width": 1024,
+        "height": 1024,
+        "upscale": true,
+        "upscale_steps": 10,
+        "negative_prompt": "",
+        "prompt": req.body.prompt,
+      },
     }),
   });
 

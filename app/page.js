@@ -47,12 +47,11 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Replicate + Next.js</title>
+        <title>Ai 小贴画科技</title>
       </Head>
 
       <p>
-        Dream something with{" "}
-        <a href="https://replicate.com/stability-ai/stable-diffusion">SDXL</a>:
+        输入提示词生成
       </p>
 
       <form className="form" onSubmit={handleSubmit}>
