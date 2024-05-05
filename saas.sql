@@ -1,13 +1,13 @@
 CREATE TABLE gallery (
     id SERIAL PRIMARY KEY,
     user_id VARCHAR(50) NOT NULL,
-    image_url VARCHAR(100),
-    create_time DATE NOT NULL,
+    image_url VARCHAR(255),
+    create_time TIMESTAMP NOT NULL,
     status VARCHAR(50)
 );
 
 INSERT INTO gallery (user_id, image_url, create_time, status)
-VALUES ('user123', 'http://example.com/image1.jpg', '2023-05-04', 'active');
+VALUES ('user_2fwn7vlP1Sq8E486Wh0zAzxeR1T', 'https://replicate.delivery/pbxt/fbZmddodNLwmNKXTK5UPQaDwsPyDrzFfBkzGyLBdTt91hAxSA/ComfyUI_00001_.webp', '2024-05-04T15:37:33.524000Z', 'active');
 
 CREATE TABLE user (
     id INT PRIMARY KEY,
