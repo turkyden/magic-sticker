@@ -74,3 +74,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.transparent-img-bg {
+  background-image: -webkit-gradient(linear,left bottom,right top,color-stop(25%,#d4d4d4),color-stop(0,transparent),color-stop(75%,transparent),color-stop(0,#d4d4d4),to(#d4d4d4)),-webkit-gradient(linear,left bottom,right top,color-stop(25%,#d4d4d4),color-stop(0,transparent),color-stop(75%,transparent),color-stop(0,#d4d4d4),to(#d4d4d4));
+  background-image: linear-gradient(to top right,#d4d4d4 25%,transparent 0,transparent 75%,#d4d4d4 0,#d4d4d4),linear-gradient(to top right,#d4d4d4 25%,transparent 0,transparent 75%,#d4d4d4 0,#d4d4d4);
+  background-color: #dfdfdf;
+  background-size: 16px 16px;
+  background-position: 0 0,8px 8px
+}

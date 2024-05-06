@@ -67,7 +67,8 @@ export default function Create() {
                 fill
                 src={prediction.output[prediction.output.length - 1]}
                 alt="output"
-                sizes='100vw'
+                width={256}
+                height={256}
               />
               </div>
             )}
