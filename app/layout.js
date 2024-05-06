@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-      <html lang="en" className="dark">
+      <html lang="en">
         <body className={inter.className}>
           <header className="flex z-20 sticky top-0 items-center px-4 justify-between h-16 backdrop-blur-xl">
             <Link href="/" className="text-2xl font-bold lg:ml-6">SaaS</Link>

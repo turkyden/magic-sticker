@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button"
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -50,9 +52,9 @@ export default function Create() {
         输入提示词生成
       </p>
 
-      <form className="form" onSubmit={handleSubmit}>
-        <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
-        <button type="submit">Go!</button>
+      <form className="form space-y-4" onSubmit={handleSubmit}>
+        <Textarea name="prompt" placeholder="Enter a prompt to display an image" />
+        <Button type="submit">Generate</Button>
       </form>
 
       {error && <div>{error}</div>}
